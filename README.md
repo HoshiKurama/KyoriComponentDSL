@@ -43,3 +43,8 @@ Maven
     </dependency>
 </dependencies>
 ```
+## Instructions:
+```kotlin
+buildComponent {
+        // building code here
+}
