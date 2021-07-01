@@ -39,7 +39,7 @@ Maven
     <dependency>
         <groupId>com.github.HoshiKurama</groupId>
         <artifactId>KyoriComponentDSL</artifactId>
-        <version>Tag</version>
+        <version>1.0.0</version>
     </dependency>
 </dependencies>
 ```
