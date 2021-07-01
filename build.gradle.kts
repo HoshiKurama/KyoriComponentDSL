@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "com.hoshikurama.github"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 application {
     mainClass.set("com.hoshikurama.github.componentDSL.ComponentBuilding")
