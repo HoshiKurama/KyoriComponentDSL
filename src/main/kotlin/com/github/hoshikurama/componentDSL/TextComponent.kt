@@ -6,9 +6,9 @@ import net.kyori.adventure.text.event.ClickEvent
 import net.kyori.adventure.text.event.HoverEvent
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer
 
-fun TextComponent.Builder.formattedContent(content: String) {
+fun TextComponent.Builder.formattedContent(content: String): TextComponent.Builder {
     content("")
-    append(LegacyComponentSerializer.legacyAmpersand().deserialize(content))
+    return append(LegacyComponentSerializer.legacyAmpersand().deserialize(content))
 }
 
 fun <T> TextComponent.Builder.onHover(init: HoverEventBuilder.() -> HoverEvent<T>): TextComponent.Builder {

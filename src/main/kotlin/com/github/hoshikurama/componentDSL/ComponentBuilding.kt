@@ -45,4 +45,12 @@ class ComponentBuilding internal constructor() {
     fun translatable(builder: TranslatableComponent.Builder.() -> Unit) {
         component += net.kyori.adventure.extra.kotlin.translatable(builder)
     }
+
+    fun append(addition: () -> Component) {
+        component += addition
+    }
+
+    fun append(that: Component) {
+        component += that
+    }
 }
